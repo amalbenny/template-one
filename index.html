@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-	<head>
+	<head>  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/amalbenny/amalbenny@v0.2.2/wm/style.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -14,11 +14,11 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
-	<body>
+	<body><div ng-app="" ng-init="title=heading">
 		<div class="reveal">
 			<div class="slides">
                                 <section id="fragments">
-						<h2>{{title}}</h2>
+						<h2> {{ title }} </h2>
 						<p>Details about...</p>
 						<p class="fragment">Presentation or Project</p>
 						<p>
@@ -34,8 +34,8 @@
 				<section>Slide 1
 details 
 <div class="cardBody">
- - list item
- &nbsp; - sub item
+ - list item <br/>
+ &nbsp; - sub item<br/>
 </div>
                                 </section>
 				<section>Slide 2</section>
@@ -57,5 +57,5 @@ details
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
-	</body>
+	</div></body>
 </html>
