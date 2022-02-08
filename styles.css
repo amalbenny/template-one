@@ -1,0 +1,4 @@
+@import ("dist/reveal.css");
+@import ("dist/reset.css");
+@import ("dist/theme/league.css");
+@import ("plugin/highlight/monokai.css");
