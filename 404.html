@@ -114,18 +114,30 @@ Or You can contact us through
 <div class="container">
 <form action="https://formspree.io/f/mnqwdpnb"
   method="POST" name="form">
-  <label><div class="row">
-  <div class="col-25">  If you need further assistance Share Your E-mail address:
-   </div><div class="col-75"> <input type="email" name="email">
-  </div></div></label>
-  <label><div class="row"><div class="col-25">
-    If you jave something to say:
-    </div><div class="col-75"><textarea name="message" placeholder="suggestions, feedbacks, reportings are recommended..."></textarea>
-  </div></div></label>
+    <div class="row">
+    <div class="col-25">
+      <label for="email"> If you need further assistance Share Your E-mail address:</label>
+    </div>
+    <div class="col-75">
+      <input type="email" name="email" >
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="subject"> If you jave something to say: </label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="suggestions, feedbacks, reportings are recommended..."></textarea>
+  </div></div></label> style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
   <input type="hidden" name="browserN">
   <input type="hidden" name="browserV">
   <input type="hidden" name="currentURL"> 
-  <button type="submit">Send Report</button>
+  <div class="row">
+    <input type="submit" Value="submit">
+  </div>
 </form>
 
 </div>
