@@ -156,6 +156,7 @@ var browserName = (function (agent) {        switch (true) {
             default: return "other";
         }
     })(window.navigator.userAgent.toLowerCase());
+browserName += " Browser.\n";
 function isBrave() {
   if (window.navigator.brave != undefined) {
     if (window.navigator.brave.isBrave.name == "isBrave") {
@@ -169,16 +170,14 @@ function isBrave() {
 }
 
 if(isBrave){
-    browserName = "Brave (chromium based)";
+    browserName += " || Brave Version Contains";
 }
-browserName += " Browser.\n";
+
 
 document.form.browserN.value = browserName;
 document.form.browserV.value = "compatibility info : " + navigator.appVersion;
 document.form.browserURL.value = window.location.href;
 </script>
-
-
 
 
 
